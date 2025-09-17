@@ -1,0 +1,354 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  width: 100%;
+  background: url('../asset/backgroundevent.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* body */
+
+.title {
+  margin-top: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff9eece;
+  h1 {
+    font-size: 5.3rem;
+    text-shadow:
+      0 0 42px rgb(255, 128, 0),
+      0 0 82px rgb(255, 145, 0),
+      0 0 92px rgb(250, 125, 41),
+      0 0 102px rgb(255, 114, 63),
+      0 0 151px rgb(255, 0, 0);
+  }
+
+  h2 {
+    text-shadow:
+      0 0 42px rgb(255, 128, 0),
+      0 0 82px rgb(255, 145, 0),
+      0 0 92px rgb(250, 125, 41),
+      0 0 102px rgb(255, 114, 63),
+      0 0 151px rgb(255, 0, 0);
+
+    margin-bottom: 18px;
+  }
+}
+
+.content{
+  margin-top: 3.5rem;
+  left: 0;
+  display: flex;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  width: 90%;
+  background-color: #fea813ce;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+
+.text{
+  padding-top: 2.5rem;
+  margin-right: 1.2rem;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: right;
+}
+
+.text h1{
+  font-size: 5rem;
+}
+
+.text p{
+  font-size: 1.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.sponsor{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5rem
+}
+
+.sponsor h2{
+  font-size: 2rem;
+}
+
+.sponsor img{
+  width: 10rem;
+  margin: 1rem 2rem 1rem 3rem;
+}
+
+.video1{
+  width: 50%;
+  margin-right: 2rem;
+  margin-left: 1rem;
+}
+
+a.orange_button {
+  margin-bottom: 10px;
+  background-color: rgb(41, 41, 41);
+  border-radius: 10px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.1s ease 0s;
+}
+
+a.orange_button:hover{
+  background-color: black;
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #fea813,
+            0 0 0.8rem #fea813,
+            0 0 2.8rem #fea813,
+            inset 0 0 1.3rem #fea813; 
+  
+  color: #fff;
+  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgb(255, 128, 0),
+      0 0 82px rgb(255, 162, 0),
+      0 0 92px rgb(250, 208, 41),
+      0 0 102px rgb(255, 220, 63),
+      0 0 151px rgb(255, 242, 0);
+  border-radius: 10px;
+  padding: 15px 20px 15px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/* footer  */
+
+footer{
+  position: relative;
+  margin-top: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: 5rem;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 20px;
+  color: #fff;
+}
+
+.footer_content{
+  display: flex;
+  flex-direction: column;
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem 0 0.5rem 0;
+}
+
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  font-size: 1.5rem;
+  color: #fea813;
+  transition: 0.5s ease;
+}
+
+.footer_bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer_bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer_bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+
+
+@media(max-width:992px){
+    header{
+      padding: 1.3rem 5%;
+    }
+
+    .content{
+      display: block;
+      margin-left: 2.5rem;
+      padding-bottom: 3rem;
+      height: fit-content;
+    }
+
+    .content .video1{
+      margin-top: 3rem;
+      width: 80%;
+      margin-left: 2rem;
+      height: 30%;
+    }
+
+    .text {
+      text-align: center;
+      margin-left: 3rem;
+      margin-right: 3rem;
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+        margin-bottom: 1.2rem;
+      }
+    }
+
+}
+
+@media(max-width: 768px){
+  /* content  */
+
+  .title {
+    margin-top: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    h1 {
+      font-size: 2rem;
+      text-shadow:
+        0 0 42px rgb(255, 128, 0),
+        0 0 82px rgb(255, 145, 0),
+        0 0 92px rgb(250, 125, 41),
+        0 0 102px rgb(255, 114, 63),
+        0 0 151px rgb(255, 0, 0);
+    }
+  
+    h2 {
+      text-shadow:
+        0 0 42px rgb(255, 128, 0),
+        0 0 82px rgb(255, 145, 0),
+        0 0 92px rgb(250, 125, 41),
+        0 0 102px rgb(255, 114, 63),
+        0 0 151px rgb(255, 0, 0);
+  
+      margin-bottom: 18px;
+    }
+  }
+
+  .content{
+    margin-top: 0rem;
+    display: block;
+    margin-left: 1.8rem;
+    margin-right: 5.5rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+  }
+  
+  .text{
+    margin-top: 1rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .text h1{
+    font-size: 3rem;
+  }
+  
+  .text p{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .content .video1{
+    margin-top: 1rem;
+    width: 60%;
+    margin-right: 1.8rem;
+    margin-left: 2.4rem;
+    margin-bottom: -3rem;
+  }
+
+  .sponsor img{
+    width: 7rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  a.orange_button {
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  a.orange_button:hover{
+    background-color: black;
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #fea813,
+              0 0 0.8rem #fea813,
+              0 0 2.8rem #fea813,
+              inset 0 0 1.3rem #fea813; 
+    
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(255, 128, 0),
+        0 0 82px rgb(255, 162, 0),
+        0 0 92px rgb(250, 208, 41),
+        0 0 102px rgb(255, 220, 63),
+        0 0 151px rgb(255, 242, 0);
+    border-radius: 10px;
+    padding: 15px 20px 15px 20px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+}
+
+

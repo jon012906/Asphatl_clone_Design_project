@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="../css/subscribe.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+    <script src="../js/subscribe.js"></script>
+    <!-- navbar -->
+    <header>
+        <!-- logo  -->
+        <a href="./main.html" class="logo">
+            <img src="../asset/logoasp.png">
+        </a>
+
+        <!-- menu hamburger for responsive -->
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <img id="menu-icon" src="../asset/burger2.png">
+            <img id="close-icon" src="../asset/close2.png">
+        </label>
+
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <a href="./main.html">Home</a> <!--for home page-->
+            <a href="./garage.html">Garage</a> <!--for homepage-->
+            <a href="./news.html">News</a> <!--for news page-->
+            <a href="./event.html">Esports</a> <!--for esport page-->
+            <a class="active" id="subscribe" href="./subscribe.html">Subscribe</a> <!--for subscribe page-->
+        </nav>
+    </header>
+
+    <!-- form card -->
+    <div class="wrapper">
+        <section id="form">
+            <!-- title  -->
+            <div class="title">
+                <h1>Register Subcription</h1>
+            </div>
+            <div class="line"></div>
+
+            <!-- input box -->
+            <div class="form_box">
+                <form>
+                    <div class="input_group">
+                        <div class="input_field">
+                            <label for="fname">Fullname </label><br>
+                            <input type="text" id="fname" placeholder="Fullname" required><br>
+                            <span class="error" id="fnameError"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="email">Email </label><br>
+                            <input type="email" id="email" placeholder="Email" required><br>
+                            <span class="error" id="emailError"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="date">Date of birth</label><br>
+                            <input type="date" id="date" placeholder="date" required><br>
+                            <span class="error" id="dateError"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="gender">Gender </label><br>
+                            <select id="gender" name="gender">
+                                <option value="">Please select one…</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select><br>
+                            <span class="error" id="genderError"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="password">Password</label><br>
+                            <input type="password" id="password" placeholder="Password" required>
+                            <span class="error" id="passwordError"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="confirm-password">Confirm Password</label><br>
+                            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+                            <span class="error" id="confirm-passwordError"></span>
+                        </div>
+
+                        <div class="input_field">
+                            <label for="checkbox" class="agree">
+                                <input type="checkbox" id="terms"> I agree to these <a href="#">Terms and Conditions</a>
+                            </label><br>
+                            <span class="error" id="termsError"></span>
+                        </div>
+                        <button class="button" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- response would display after submit  -->
+        <div id="response">
+            <h1>Thank You for Registering!</h1>
+        </div>
+    </div>
+
+    <!-- footer section  -->
+    <footer>
+        <div class="footer_content"></div>
+        <p class="footer_bottom">
+            © Copyright 2024 Gamefolt. All rights reserved.
+        </p>
+    </footer>
+    
+    
+</body>
+</html>
